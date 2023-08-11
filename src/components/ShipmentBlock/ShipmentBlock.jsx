@@ -44,7 +44,6 @@ const ShipmentBlock = ({ shipment }) => {
 
   useEffect(() => {
     if (shipment.boxes) {
-      console.log("render");
       const inputValues = getSplitedValues(shipment.boxes);
       handleCargoCalculate(inputValues);
 

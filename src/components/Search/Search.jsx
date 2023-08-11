@@ -19,8 +19,6 @@ const Search = ({ shipments }) => {
     router.push(`/shipment/${value.item.key}`);
   };
 
-  console.log(formattedData);
-
   return (
     <div className={styles.inputWrapper}>
       <ReactSearchBox
@@ -29,7 +27,6 @@ const Search = ({ shipments }) => {
         inputFontColor="#00000"
         inputFontSize="16px"
         iconBoxSize="50px"
-        inputHeight={"px"}
         leftIcon={
           <Image src="/Zoom.svg" width={20} height={20} alt="search-icon" />
         }
