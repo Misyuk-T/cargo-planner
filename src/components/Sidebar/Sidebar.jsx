@@ -1,25 +1,28 @@
+import Image from "next/image";
 import Link from "@/components/Link/Link";
 
 import styles from "./Sidebar.module.scss";
 
-const Sidebar = () => {
+const Sidebar = ({ shipments }) => {
   return (
     <div className={styles.sidebar}>
+      <Image
+        src="/Logo.svg"
+        className={styles.logo}
+        alt="logo"
+        width={212}
+        height={42}
+      />
       <h2 className={styles.sidebarTitle}>Shipment List</h2>
       <nav>
         <ul className={styles.navigationList}>
-          <li>
-            <Link to="/">Amazon</Link>
-          </li>
-          <li>
-            <Link to="/">American Express</Link>
-          </li>
-          <li>
-            <Link to="/">Airbnb</Link>
-          </li>
-          <li>
-            <Link to="/">Apple</Link>
-          </li>
+          {shipments.map((item) => {
+            return (
+              <li key={item.id}>
+                <Link to={`/shipment/${item.id}`}>{item.name}</Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </div>

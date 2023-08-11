@@ -1,8 +1,14 @@
 .sidebar {
 	position: relative;
 	left: 0;
-	width: 320px;
+	width: 270px;
+	padding-top: 40px;
+	margin-right: 50px;
 	height: 100%;
+	
+	.logo {
+		margin-bottom: 40px;
+	}
 	
 	.sidebarTitle {
 		font-size: 20px;

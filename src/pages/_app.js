@@ -1,20 +1,26 @@
 import "reset-css";
-import "src/styles/global.scss";
 import "@fontsource/roboto/latin.css";
 
-import { Header, Sidebar } from "@/components";
 import { getAllShipments } from "@/action/shipments";
+
+import { Sidebar, Search } from "@/components";
+
+import "src/styles/global.scss";
+import styles from "src/styles/app.module.scss";
 
 let appPropsCache;
 
 const App = ({ Component, pageProps, shipments }) => {
-  console.log(shipments, "shipments");
-
   return (
-    <div className="container">
-      <Header />
-      <Sidebar />
-      <Component {...pageProps} />
+    <div className={styles.container}>
+      <div className={styles.navigationBox}>
+        <Sidebar shipments={shipments} />
+
+        <div className={styles.pageContainer}>
+          <Search shipments={shipments} />
+          <Component {...pageProps} />
+        </div>
+      </div>
     </div>
   );
 };
