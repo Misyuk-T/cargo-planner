@@ -1,9 +1,11 @@
 :root {
     body {
         font-family: "Roboto", serif;
+        background: #1B1D22;
     }
     
     .container {
+        position: relative;
         width: 100%;
         display: block;
         box-sizing: border-box;

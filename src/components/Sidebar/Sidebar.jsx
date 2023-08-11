@@ -1,19 +1,12 @@
-import styles from "./Sidebar.module.scss";
 import Link from "@/components/Link/Link";
-import Image from "next/image";
+
+import styles from "./Sidebar.module.scss";
 
 const Sidebar = () => {
   console.log("sidebar");
 
   return (
     <div className={styles.sidebar}>
-      <Image
-        className={styles.logo}
-        src="/Logo.svg"
-        alt="logo"
-        width={212}
-        height={42}
-      />
       <h2 className={styles.sidebarTitle}>Shipment List</h2>
       <nav>
         <ul className={styles.navigationList}>
