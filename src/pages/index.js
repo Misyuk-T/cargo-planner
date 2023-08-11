@@ -1,11 +1,5 @@
-import { Sidebar } from "@/components";
-
 const Home = () => {
-  return (
-    <div>
-      <Sidebar />
-    </div>
-  );
+  return <div>Home</div>;
 };
 
 export default Home;

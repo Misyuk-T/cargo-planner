@@ -3,8 +3,6 @@ import Link from "@/components/Link/Link";
 import styles from "./Sidebar.module.scss";
 
 const Sidebar = () => {
-  console.log("sidebar");
-
   return (
     <div className={styles.sidebar}>
       <h2 className={styles.sidebarTitle}>Shipment List</h2>
