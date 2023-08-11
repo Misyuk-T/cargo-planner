@@ -1,3 +1,13 @@
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+import "reset-css";
+
+import styles from "src/styles/global.module.scss";
+
+const App = ({ Component, pageProps }) => {
+  return (
+    <div className={styles.container}>
+      <Component {...pageProps} />
+    </div>
+  );
+};
+
+export default App;
