@@ -1,0 +1,64 @@
+{
+  "shipments": [
+    {
+      "id": "1",
+      "name": "Amazon",
+      "email": "info@amazon.com",
+      "boxes": "5,6,4.5,2.3"
+    },
+    {
+      "id": "2",
+      "name": "American Express",
+      "email": "a@express.com",
+      "boxes": "3.2,4.8,7.1"
+    },
+    {
+      "id": "3",
+      "name": "Airbnb",
+      "email": "support@airbnb.net",
+      "boxes": "10,9.5,6.7,2.2"
+    },
+    {
+      "id": "4",
+      "name": "Apple",
+      "email": "hello@apple.com",
+      "boxes": "8.4,5.6,3.9"
+    },
+    {
+      "id": "5",
+      "name": "World Company",
+      "email": "abc@world.com",
+      "boxes": "7,3.7,6.1,4.4"
+    },
+    {
+      "id": "6",
+      "name": "Industrial City",
+      "email": "help@city.com",
+      "boxes": "2.5,5.8,9.3"
+    },
+    {
+      "id": "7",
+      "name": "DIV",
+      "email": "info@div.com",
+      "boxes": "6.2,8.7,4.3"
+    },
+    {
+      "id": "8",
+      "name": "Hello World",
+      "email": "info@helloworld.co",
+      "boxes": "3,7.5,5.1,2.8"
+    },
+    {
+      "id": "9",
+      "name": "Foo Bar",
+      "email": "support@foobar.com",
+      "boxes": "9.6,4.1,6.5"
+    },
+    {
+      "id": "10",
+      "name": "Java Script",
+      "email": "contact@js.com",
+      "boxes": "4,5.4,7.2,3.3"
+    }
+  ]
+}
