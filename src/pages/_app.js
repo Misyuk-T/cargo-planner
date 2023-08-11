@@ -1,10 +1,11 @@
 import "reset-css";
+import "src/styles/global.scss";
 
-import styles from "src/styles/global.module.scss";
+import "@fontsource/roboto/latin.css";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Component {...pageProps} />
     </div>
   );

@@ -1,3 +1,11 @@
-export default function Home() {
-  return <div>Home Page</div>;
-}
+import { Sidebar } from "@/components";
+
+const Home = () => {
+  return (
+    <div>
+      <Sidebar />
+    </div>
+  );
+};
+
+export default Home;

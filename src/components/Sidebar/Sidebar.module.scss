@@ -1,0 +1,29 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 320px;
+	height: 100%;
+	background-color: #1B1D22;
+	padding: 40px 50px 40px 40px;
+	
+	
+	.logo {
+		margin-bottom: 40px;
+	}
+	
+	.sidebarTitle {
+		font-size: 20px;
+		line-height: 1.9;
+		font-weight: 400;
+		color: #979797;
+		text-transform: uppercase;
+	}
+	
+	.navigationList {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		margin-top: 13px;
+	}
+}
