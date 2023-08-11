@@ -6,14 +6,17 @@ import styles from "./Sidebar.module.scss";
 const Sidebar = ({ shipments }) => {
   return (
     <div className={styles.sidebar}>
-      <Image
-        src="/Logo.svg"
-        className={styles.logo}
-        alt="logo"
-        width={212}
-        height={42}
-      />
-      <h2 className={styles.sidebarTitle}>Shipment List</h2>
+      <div>
+        <Image
+          src="/Logo.svg"
+          className={styles.logo}
+          alt="logo"
+          width={212}
+          height={42}
+        />
+        <h2 className={styles.sidebarTitle}>Shipment List</h2>
+      </div>
+
       <nav>
         <ul className={styles.navigationList}>
           {shipments.map((item) => {

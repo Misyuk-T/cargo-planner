@@ -19,9 +19,14 @@
 	}
 	
 	.navigationList {
+		position: sticky;
+		max-height: 80vh;
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
 		margin-top: 13px;
+		overflow-y: scroll;
+		margin-right: -50px;
+		padding-right: 50px;
 	}
 }

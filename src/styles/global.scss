@@ -2,12 +2,14 @@
     body {
         font-family: "Roboto", serif;
         background: #1B1D22;
+        padding-bottom: 50px;
     }
     
     .react-search-box-dropdown {
         position: absolute;
         width: 100%;
         top: 80px;
+        z-index: 100;
     }
 }
 
